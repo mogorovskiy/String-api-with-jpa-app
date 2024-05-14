@@ -1,4 +1,4 @@
-package com.mogorovskiy.Stringjpaapp;
+package com.mogorovskiy.lamp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

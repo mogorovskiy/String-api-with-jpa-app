@@ -1,4 +1,4 @@
-package com.mogorovskiy.Stringjpaapp.exception;
+package com.mogorovskiy.lamp.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

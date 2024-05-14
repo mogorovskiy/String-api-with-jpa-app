@@ -1,13 +1,14 @@
-package com.mogorovskiy.Stringjpaapp.service;
+package com.mogorovskiy.lamp.service;
 
-import com.mogorovskiy.Stringjpaapp.dto.*;
-import com.mogorovskiy.Stringjpaapp.model.*;
+import com.mogorovskiy.lamp.dto.*;
+import com.mogorovskiy.lamp.model.*;
 import org.springframework.stereotype.Service;
-
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public interface LampService {
+
     Lamp save(LampRequestDto lampRequestDto);
 
     List<Lamp> findAll();

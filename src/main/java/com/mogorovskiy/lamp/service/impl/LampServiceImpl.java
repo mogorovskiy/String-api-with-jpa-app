@@ -1,11 +1,11 @@
-package com.mogorovskiy.Stringjpaapp.service.impl;
+package com.mogorovskiy.lamp.service.impl;
 
-import com.mogorovskiy.Stringjpaapp.dto.LampRequestDto;
-import com.mogorovskiy.Stringjpaapp.exception.*;
-import com.mogorovskiy.Stringjpaapp.mapper.LampMapper;
-import com.mogorovskiy.Stringjpaapp.model.Lamp;
-import com.mogorovskiy.Stringjpaapp.repository.LampRepository;
-import com.mogorovskiy.Stringjpaapp.service.LampService;
+import com.mogorovskiy.lamp.dto.LampRequestDto;
+import com.mogorovskiy.lamp.exception.ResourceNotFoundException;
+import com.mogorovskiy.lamp.mapper.LampMapper;
+import com.mogorovskiy.lamp.model.Lamp;
+import com.mogorovskiy.lamp.repository.LampRepository;
+import com.mogorovskiy.lamp.service.LampService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -14,6 +14,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class LampServiceImpl implements LampService {
+
     private final LampRepository lampRepository;
     private final LampMapper lampMapper;
 

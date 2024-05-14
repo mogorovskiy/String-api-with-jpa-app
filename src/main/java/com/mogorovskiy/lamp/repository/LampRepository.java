@@ -1,12 +1,14 @@
-package com.mogorovskiy.Stringjpaapp.repository;
+package com.mogorovskiy.lamp.repository;
 
-import com.mogorovskiy.Stringjpaapp.model.Lamp;
+import com.mogorovskiy.lamp.model.Lamp;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.*;
+import java.util.List;
 
 public interface LampRepository extends JpaRepository<Lamp, Long> {
+
     List<Lamp> findByManufacturer(String manufacturer);
+
     List<Lamp> findByPower(Long power);
 
     void deleteById(Long id);
